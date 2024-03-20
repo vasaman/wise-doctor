@@ -10,6 +10,7 @@
 .about-us {
   position: relative;
   line-height: 22px;
+  text-decoration: none;
 }
 .button-18 {
   border-radius: var(--br-lg);
@@ -30,6 +31,7 @@
   font-family: var(--font-manrope);
   color: #224e64;
   text-align: left;
+  text-decoration: none;
 }
 .button-17,
 .second-container {
@@ -286,6 +288,7 @@
   max-width: 100%;
   margin:auto;
   border-radius: 20px;
+  overflow: hidden;
 }
 .asterisk-1-icon,
 .who-we-are {
@@ -294,7 +297,7 @@
 }
 .who-we-are {
   margin: 0;
-  width: 276px;
+  width: 350px;
   font-size: inherit;
   line-height: 108px;
   font-weight: 700;
@@ -508,6 +511,7 @@
 }
 .container-33-parent,
 .first-container,
+.brief-intro-section,
 .launched-soon-frame {
   align-self: stretch;
   display: flex;
@@ -525,7 +529,8 @@
   color: #34749c;
 }
 .container-33-parent,
-.first-container {
+.first-container,
+.brief-intro-section {
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -613,6 +618,7 @@
   font-family: inherit;
 }
 .container-40 {
+  height: 340px;
   width: 368px;
   border-radius: var(--br-xl);
   background-color: var(--color-lightblue-100);
@@ -649,6 +655,7 @@
   font-family: inherit;
 }
 .container-41 {
+  height: 340px;
   width: 368px;
   border-radius: var(--br-xl);
   background-color: #f3f8fb;
@@ -686,6 +693,7 @@
   font-family: inherit;
 }
 .container-42 {
+  height: 340px;
   width: 368px;
   border-radius: var(--br-xl);
   background-color: var(--color-lightblue-100);
@@ -726,6 +734,7 @@
   font-family: inherit;
 }
 .container-43 {
+  height: 340px;
   width: 368px;
   border-radius: var(--br-xl);
   background-color: #f3f9fb;
@@ -763,6 +772,7 @@
   font-family: inherit;
 }
 .container-44 {
+  height: 340px;
   width: 368px;
   border-radius: var(--br-xl);
   background-color: var(--color-lightblue-100);
@@ -805,6 +815,7 @@
   max-width: 100%;
 }
 .container-45 {
+  height: 340px;
   width: 368px;
   border-radius: var(--br-xl);
   background-color: var(--color-aliceblue-100);
@@ -833,12 +844,13 @@
   box-sizing: border-box;
   align-self: stretch;
   align-items: center;
-  padding: 0 21px 0 0;
+  padding: 150px 21px 0 0;
   max-width: 100%;
   text-align: left;
   font-size: 48px;
   color: var(--color-steelblue-100);
   font-family: var(--font-noto-sans);
+  /* margin-top: 10vh; */
 }
 .vision-section {
   display: flex;
@@ -1095,6 +1107,7 @@
   gap: 16px 0;
   max-width: 100%;
 }
+
 .careers,
 .connect-page {
   align-items: flex-start;
