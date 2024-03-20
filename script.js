@@ -21,7 +21,7 @@ async function changeLanguage(lang) {
     
     const langData = await fetchLanguageData(lang);
     updateContent(langData);
-    toggleArabicStylesheet(lang); // Toggle Arabic stylesheet
+    // toggleArabicStylesheet(lang); // Toggle Arabic stylesheet
 }
 
 function toggleArabicStylesheet(lang) {
@@ -40,9 +40,21 @@ function toggleArabicStylesheet(lang) {
 }
 
 
+
 window.addEventListener('DOMContentLoaded', async () => {
-    const userPreferredLanguage = localStorage.getItem('language') || 'en';
+    const userPreferredLanguage =  localStorage.getItem('language') ||'en';
+    if(localStorage.getItem('language')) {
+        document.getElementById('language').selectedIndex = ['en','fr','ar'].indexOf(localStorage.getItem('language'))
+    }
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
     // toggleArabicStylesheet(userPreferredLanguage);
+    document.getElementById("language").addEventListener('change' , async function() {
+    console.log(this.selectedIndex);
+     await changeLanguage(this.value);
+
+
+}
+)
+
 });
