@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -14,10 +14,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap"
     />
+    <script src="./script.js"></script>
   </head>
   <body>
     <div class="careers">
-      <section class="first-container">
+      <section class="first-container" id="header">
         <header class="container-48">
           <h1 class="wise-doctor">Wise Doctor</h1>
           <div class="about-us-button">
@@ -169,16 +170,13 @@
           </div>
         </div>
       </section>
-      <section class="footer-logo-frames">
+      <section class="try-us-section" id="try-us-section">
         <div class="social-media-logos-frame">
-          <h1 class="launching-soon">Launching Soon . . .</h1>
-          <img
-            class="rocket-launch-1"
-            loading="lazy"
-            alt=""
-            src="./public/rocket-launch-1.svg"
-          />
-        </div>
+          <h1 class="launching-soon" data-i18n="about_us"></h1>
+          <img class="rocket-launch-1" loading="lazy" alt="" src="./public/rocket-launch-1.svg" />
+        </div>        
+      </section>
+      <section class="vision-section" id="vision-section">
         <div class="container-39">
           <div class="header-text-frame">
             <h1 class="our-vision">Our Vision</h1>
@@ -258,15 +256,15 @@
           </div>
         </div>
       </section>
-      <section class="connect-page">
+      <section class="connect-page" id="connect-page">
         <div class="container-47">
           <div class="help-center">
             <div class="logo-section">
-              <div class="about-us1">About us</div>
-              <div class="features">Features</div>
-              <div class="help-center1">Help Center</div>
-              <div class="contact-us">Contact us</div>
-              <div class="faqs">FAQs</div>
+              <a class="about-us1" href="#header">About us</a>
+              <a class="features" href="#vision-section">Features</a>
+              <!-- <div class="help-center1">Help Center</div> -->
+              <a class="contact-us" href="#connect-page" >Contact us</a>
+              <!-- <div class="faqs">FAQs</div> -->
             </div>
           </div>
           <div class="line-separator">
@@ -280,14 +278,11 @@
             <div class="textbox-english">
               <div class="chevron-down-large">
                 <div class="textbox-2">
-                  <div class="english">English</div>
-                  <div class="feature-help-contact">
-                    <img
-                      class="chevron-down-large1"
-                      alt=""
-                      src="./public/chevron-down-large.svg"
-                    />
-                  </div>
+                  <select name="language" id="language" >
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="ar">Arabic</option>
+                  </select>
                 </div>
               </div>
               <div class="favorite-button-wrapper">
