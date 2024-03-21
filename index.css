@@ -73,7 +73,8 @@
   font-family: var(--font-manrope);
 }
 .container-48 {
-  margin-left: -5px;
+  /* width: 85vw;
+  margin-left: 2vw; */
   align-self: stretch;
   border-radius: var(--br-9xs);
   background-color: var(--color-white);
@@ -575,7 +576,7 @@
   max-width: 100%;
 }
 .our-vision {
-  margin: 0;
+  margin-bottom: 50px;
   width: 284px;
   position: relative;
   font-size: inherit;
@@ -592,7 +593,6 @@
   align-items: flex-start;
   justify-content: center;
   max-width: 100%;
-  margin-bottom: 40px;
 }
 .connect-1-icon {
   height: 98px;
@@ -838,6 +838,7 @@
 }
 .container-39,
 .try-us-section {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1154,6 +1155,7 @@
     font-size: 41px;
     line-height: 65px;
     flex: 1;
+    margin-bottom: 30px;
   }
   .container-49 {
     flex-wrap: wrap;
@@ -1164,6 +1166,12 @@
   .launching-soon {
     font-size: 38px;
     line-height: 54px;
+    margin-left: 45px;
+  }
+  .rocket-launch-1 {
+    padding-right: 40px;
+    width: 50px;
+    height: 50px;
   }
   .our-vision {
     font-size: var(--font-size-23xl);
@@ -1193,6 +1201,7 @@
     padding-left: var(--padding-47xl);
     padding-right: var(--padding-47xl);
     box-sizing: border-box;
+    overflow: visible;
   }
   .text-with-chevron-down {
     min-width: 100%;
@@ -1202,6 +1211,8 @@
   }
   .sidebar-frame {
     gap: 28px 17px;
+    justify-content: unset;
+    text-align: center;
   }
   .vision-section {
     gap: 38px 0;
@@ -1225,7 +1236,7 @@
     gap: 78px 0;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .container-48 {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
@@ -1233,6 +1244,14 @@
   }
   .third-container {
     gap: 0 21px;
+    display: none;
+  }
+  .image-29-icon{
+    top: -130px;
+    left: 50px;
+  }
+  .footer-container {
+    margin-top: 70px;
   }
   .medicare-become-easy {
     font-size: var(--font-size-12xl);
@@ -1241,6 +1260,7 @@
   .container-33 {
     padding: var(--padding-43xl) var(--padding-xl) 68px;
     box-sizing: border-box;
+    overflow: visible;
   }
   .who-we-are {
     font-size: 25px;
@@ -1311,6 +1331,7 @@
     padding-top: var(--padding-21xl);
     padding-bottom: var(--padding-21xl);
     box-sizing: border-box;
+    text-align: unset;
   }
   .vision-section {
     gap: 19px 0;
