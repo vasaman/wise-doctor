@@ -73,7 +73,8 @@
   font-family: var(--font-manrope);
 }
 .container-48 {
-  margin-left: -5px;
+  /* width: 85vw;
+  margin-left: 2vw; */
   align-self: stretch;
   border-radius: var(--br-9xs);
   background-color: var(--color-white);
@@ -838,6 +839,7 @@
 }
 .container-39,
 .try-us-section {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1193,6 +1195,7 @@
     padding-left: var(--padding-47xl);
     padding-right: var(--padding-47xl);
     box-sizing: border-box;
+    overflow: visible;
   }
   .text-with-chevron-down {
     min-width: 100%;
@@ -1225,7 +1228,7 @@
     gap: 78px 0;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .container-48 {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
@@ -1233,6 +1236,14 @@
   }
   .third-container {
     gap: 0 21px;
+    display: none;
+  }
+  .image-29-icon{
+    top: -130px;
+    left: 40px;
+  }
+  .footer-container {
+    margin-top: 70px;
   }
   .medicare-become-easy {
     font-size: var(--font-size-12xl);
@@ -1241,6 +1252,7 @@
   .container-33 {
     padding: var(--padding-43xl) var(--padding-xl) 68px;
     box-sizing: border-box;
+    overflow: visible;
   }
   .who-we-are {
     font-size: 25px;
