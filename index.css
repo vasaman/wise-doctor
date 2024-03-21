@@ -1211,6 +1211,8 @@
   }
   .sidebar-frame {
     gap: 28px 17px;
+    justify-content: unset;
+    text-align: center;
   }
   .vision-section {
     gap: 38px 0;
@@ -1329,7 +1331,7 @@
     padding-top: var(--padding-21xl);
     padding-bottom: var(--padding-21xl);
     box-sizing: border-box;
-    margin: unset;
+    text-align: unset;
   }
   .vision-section {
     gap: 19px 0;
