@@ -576,7 +576,7 @@
   max-width: 100%;
 }
 .our-vision {
-  margin: 0;
+  margin-bottom: 50px;
   width: 284px;
   position: relative;
   font-size: inherit;
@@ -593,7 +593,6 @@
   align-items: flex-start;
   justify-content: center;
   max-width: 100%;
-  margin-bottom: 40px;
 }
 .connect-1-icon {
   height: 98px;
@@ -1156,6 +1155,7 @@
     font-size: 41px;
     line-height: 65px;
     flex: 1;
+    margin-bottom: 30px;
   }
   .container-49 {
     flex-wrap: wrap;
@@ -1166,6 +1166,12 @@
   .launching-soon {
     font-size: 38px;
     line-height: 54px;
+    margin-left: 45px;
+  }
+  .rocket-launch-1 {
+    padding-right: 40px;
+    width: 50px;
+    height: 50px;
   }
   .our-vision {
     font-size: var(--font-size-23xl);
@@ -1240,7 +1246,7 @@
   }
   .image-29-icon{
     top: -130px;
-    left: 40px;
+    left: 50px;
   }
   .footer-container {
     margin-top: 70px;
@@ -1323,6 +1329,7 @@
     padding-top: var(--padding-21xl);
     padding-bottom: var(--padding-21xl);
     box-sizing: border-box;
+    margin: unset;
   }
   .vision-section {
     gap: 19px 0;
